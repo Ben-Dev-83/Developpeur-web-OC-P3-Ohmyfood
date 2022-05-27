@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]            [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]            [--super-prefix=<path>] [--config-env=<name>=<envvar>]            <command> [<args>]",
+  "main": "index.js",
+  "scripts": {
+    "saas": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ben-Dev-83/OC-P3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ben-Dev-83/OC-P3/issues"
+  },
+  "homepage": "https://github.com/Ben-Dev-83/OC-P3#readme"
+}
