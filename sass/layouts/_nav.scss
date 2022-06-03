@@ -1,0 +1,25 @@
+.section-nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+    &__link {
+        @include border-shadow($shadow);
+        background-color: $grey-light;
+        padding: 20px;
+        border-radius: 15px;
+        display: block;
+        text-align: center;
+    }
+
+}
+h2 {
+    margin-bottom: 20px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
