@@ -190,4 +190,26 @@ h2 {
   box-shadow: 0px 3px 3px #cecece;
 }
 
+.card__block-heart {
+  display: flex;
+}
+.card__block-heart:hover .card__heart-full {
+  transform: scale(1);
+  outline: none;
+}
+.card__heart-empty {
+  position: absolute;
+}
+.card__heart-full {
+  height: inherit;
+  pointer-events: none;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(0);
+  transition: transform 1s;
+  z-index: 1;
+}
+
 /*# sourceMappingURL=style.css.map */

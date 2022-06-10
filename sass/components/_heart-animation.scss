@@ -1,0 +1,23 @@
+.card {
+    &__block-heart{
+        display: flex;
+        &:hover .card__heart-full {
+            transform:scale(1);
+            outline:none;
+        }
+    }
+    &__heart-empty {
+        position: absolute;
+    }
+    &__heart-full {
+    height:inherit;
+    pointer-events: none;
+    background:-webkit-linear-gradient($pink, $purple);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    transform:scale(0);
+    transition: transform 1s ;
+    z-index: 1;
+    }
+}
