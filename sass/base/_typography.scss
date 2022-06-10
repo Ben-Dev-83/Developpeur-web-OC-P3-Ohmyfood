@@ -1,10 +1,13 @@
-*{
+* {
     font-family: Roboto, Arial, 'Time New Roman', sans-serif;
 }
-.title, img[title]{
-    font-family: Shrikhand, Roboto, Arial, 'Time New Roman', sans-serif;
+title, h4, img[title] {
+    font-family: "Shrikhand", "Roboto", Arial, 'Time New Roman', sans-serif;
 }
-a{
+h4 {
+    margin: 10px 0px;
+}
+a {
     text-decoration: none;
     color: #000000;
 }

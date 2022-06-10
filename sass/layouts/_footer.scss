@@ -1,0 +1,19 @@
+.footer, .footer a {
+    background-color: $grey-dark;
+    color: white;
+}
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.footer__icone:nth-child(1) {
+    margin-right: 10px;
+    font-size: 12px;
+}
+    
+.footer__icone:nth-child(n+2) {
+    margin-right: 15px;
+    font-size: 12px;
+}

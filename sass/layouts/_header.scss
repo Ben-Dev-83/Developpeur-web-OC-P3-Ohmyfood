@@ -3,12 +3,12 @@
     justify-content: center;
     align-items: center;
     height: 60px;
-    .header__logo {
+    &__logo {
         display: flex;
         width: min-content;
         height: min-content;
     }
-    .header__logo img {
+    &__img {
         width: 150px;
     }
 }
