@@ -1,0 +1,12 @@
+.card {
+    &__block-img {
+        position: relative;
+    }
+    &__new {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        background: $green;
+        padding: 4px;
+    }
+}

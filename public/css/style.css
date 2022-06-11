@@ -6,6 +6,10 @@ title, h4, img[title] {
   font-family: "Shrikhand", "Roboto", Arial, "Time New Roman", sans-serif;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 h4 {
   margin: 10px 0px;
 }
@@ -62,8 +66,32 @@ body {
   background-color: #f6f6f6;
   padding: 20px;
   border-radius: 15px;
-  display: block;
+  display: flex;
+  align-items: center;
   text-align: center;
+  position: relative;
+}
+.section-nav__link--hover:hover {
+  background-color: #f5edff;
+  opacity: 0.8;
+  box-shadow: 0px 3px 3px #00000099;
+  transform: scale(1.01);
+}
+.section-nav__link--hover:hover i {
+  color: #9356DC;
+}
+.section-nav__number-nav {
+  position: absolute;
+  padding: 3px;
+  background: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+  color: white;
+  left: -12.5px;
+}
+.section-nav__icone {
+  margin: 0px 15px 0px 7.5px;
 }
 
 h2 {
@@ -134,6 +162,7 @@ h2 {
 }
 
 .card {
+  position: relative;
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 3px 3px #cecece;
@@ -146,13 +175,19 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px 10px 10px;
+  padding: 10px 32px 10px 10px;
 }
 .card__img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
+  -o-object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+}
+.card--hover:hover {
+  opacity: 0.8;
+  box-shadow: 0px 3px 3px #00000099;
+  transform: scale(1.01);
 }
 
 .footer, .footer a {
@@ -165,15 +200,12 @@ h2 {
   flex-direction: column;
   width: 90%;
   margin: auto;
+  padding: 20px 0px;
 }
 
-.footer__icone:nth-child(1) {
+.footer__icone {
   margin-right: 10px;
-  font-size: 12px;
-}
-
-.footer__icone:nth-child(n+2) {
-  margin-right: 15px;
+  width: 10px;
   font-size: 12px;
 }
 
@@ -189,20 +221,22 @@ h2 {
   width: fit-content;
   box-shadow: 0px 3px 3px #cecece;
 }
+.search-descr__link--hover:hover {
+  opacity: 0.8;
+  box-shadow: 0px 3px 3px #00000099;
+  transform: scale(1.01);
+}
 
 .card__block-heart {
   display: flex;
-}
-.card__block-heart:hover .card__heart-full {
-  transform: scale(1);
-  outline: none;
-}
-.card__heart-empty {
   position: absolute;
+  bottom: 22px;
+  right: 15px;
+}
+.card__block-heart:focus .card__heart-full {
+  transform: scale(1);
 }
 .card__heart-full {
-  height: inherit;
-  pointer-events: none;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -210,6 +244,22 @@ h2 {
   transform: scale(0);
   transition: transform 1s;
   z-index: 1;
+  display: block;
+}
+.card__heart-empty {
+  position: absolute;
+  display: block;
+}
+
+.card__block-img {
+  position: relative;
+}
+.card__new {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  background: #99E2D0;
+  padding: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
