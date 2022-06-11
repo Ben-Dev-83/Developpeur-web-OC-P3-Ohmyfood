@@ -1,0 +1,18 @@
+.footer, .footer a {
+    background-color: $grey-dark;
+    color: white;
+}
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.footer__icone {
+    margin-right: 10px;
+    width: 10px;
+    font-size: 12px;
+}
+    
+

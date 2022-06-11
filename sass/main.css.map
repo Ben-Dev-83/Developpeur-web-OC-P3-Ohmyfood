@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACMA,AAAA,MAAM,CAAA;EACF,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "main.scss",
+        "base/_typography.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
