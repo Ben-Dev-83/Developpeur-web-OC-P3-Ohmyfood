@@ -1,0 +1,70 @@
+main {
+    background-color: $grey-light;
+}
+.block-menu-img {
+    display: flex;
+    &__img {
+        width: 100%;
+    }
+}
+.menu {
+    padding-top: 20px;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    top: -25px;
+    margin: 0px auto -25px;
+    width: 90%;
+
+}
+.list-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card__link {
+    border-radius: 15px;
+}
+.card-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    height: 50px;
+    padding: 8px;
+    @include border-shadow($shadow);
+    h4 {
+        margin: 0;
+    }
+    .display {
+        position: absolute;
+        right: -40px;
+        margin-left: 10px;
+        transition: right 1s;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        background-color: $green;
+        i {
+            transition: transform 1s;
+        }
+    }
+    span {
+        position: absolute;
+        right:20px;
+        transition: right 1s;
+    }
+}
+.menu__link:hover .display  {
+    right: 0;
+    i{
+        transform: rotate(360deg);
+    }
+}
+.menu__link:hover span  {
+    right: 60px;
+}

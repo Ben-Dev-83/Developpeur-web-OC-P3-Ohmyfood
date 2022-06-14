@@ -3,8 +3,7 @@
     color: white;
 }
 .footer__block {
-    display: flex;
-    flex-direction: column;
+    @include flex-colomn;
     width: 90%;
     margin: auto;
     padding: 20px 0px;

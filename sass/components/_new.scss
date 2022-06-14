@@ -1,6 +1,7 @@
 .card {
     &__block-img {
         position: relative;
+        display: flex;
     }
     &__new {
         position: absolute;

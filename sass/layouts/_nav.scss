@@ -1,13 +1,11 @@
 .section-nav {
     width: 90%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    @include flex-colomn;
     justify-content: center;
     margin: 40px auto;
     ul {
-        display: flex;
-        flex-direction: column;
+        @include flex-colomn;
         gap: 15px;
     }
     &__link {
@@ -21,9 +19,7 @@
         position: relative;
         &--hover:hover {
             background-color: #f5edff;
-            opacity: .8;
-            box-shadow: 0px 3px 3px #00000099;
-            transform: scale(1.01);
+            @include hover;
             i {
                 color: $purple;
             }

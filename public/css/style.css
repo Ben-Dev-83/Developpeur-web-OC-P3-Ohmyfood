@@ -209,8 +209,93 @@ h2 {
   font-size: 12px;
 }
 
-.header__button-back--display {
+main {
+  background-color: #f6f6f6;
+}
+
+.block-menu-img {
+  display: flex;
+}
+.block-menu-img__img {
+  width: 100%;
+}
+
+.menu {
+  padding-top: 20px;
+  border-radius: 25px 25px 0px 0px;
+  position: relative;
+  top: -25px;
+  margin: 0px auto -25px;
+  width: 90%;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__link {
+  border-radius: 15px;
+}
+
+.card-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  height: 50px;
+  padding: 8px;
+  box-shadow: 0px 3px 3px #cecece;
+}
+.card-menu h4 {
+  margin: 0;
+}
+.card-menu .display {
+  position: absolute;
+  right: -40px;
+  margin-left: 10px;
+  transition: right 1s;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  background-color: #99E2D0;
+}
+.card-menu .display i {
+  transition: transform 1s;
+}
+.card-menu span {
+  position: absolute;
+  right: 20px;
+  transition: right 1s;
+}
+
+.menu__link:hover .display {
+  right: 0;
+}
+.menu__link:hover .display i {
+  transform: rotate(360deg);
+}
+
+.menu__link:hover span {
+  right: 60px;
+}
+
+.header__button-back {
   display: none;
+}
+
+.header__button-back--display {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  position: absolute;
+  left: 5%;
 }
 
 .search-descr__link {
@@ -253,6 +338,7 @@ h2 {
 
 .card__block-img {
   position: relative;
+  display: flex;
 }
 .card__new {
   position: absolute;
