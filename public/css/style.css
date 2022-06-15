@@ -56,6 +56,9 @@ body {
   justify-content: center;
   margin: 40px auto;
 }
+.section-nav h2 {
+  margin-bottom: 20px;
+}
 .section-nav ul {
   display: flex;
   flex-direction: column;
@@ -92,10 +95,6 @@ body {
 }
 .section-nav__icone {
   margin: 0px 15px 0px 7.5px;
-}
-
-h2 {
-  margin-bottom: 20px;
 }
 
 .search {
@@ -209,10 +208,6 @@ h2 {
   font-size: 12px;
 }
 
-main {
-  background-color: #f6f6f6;
-}
-
 .block-menu-img {
   display: flex;
 }
@@ -225,8 +220,21 @@ main {
   border-radius: 25px 25px 0px 0px;
   position: relative;
   top: -25px;
-  margin: 0px auto -25px;
+  margin-bottom: -25px;
+  background-color: #f6f6f6;
+}
+.menu h2 {
+  margin: 0px auto 20px;
   width: 90%;
+}
+
+.article-block {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
 .list-card {
@@ -346,6 +354,12 @@ main {
   right: 4%;
   background: #99E2D0;
   padding: 4px;
+}
+
+.line {
+  border: 1px solid #99E2D0;
+  width: 40px;
+  margin: 5px 0px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

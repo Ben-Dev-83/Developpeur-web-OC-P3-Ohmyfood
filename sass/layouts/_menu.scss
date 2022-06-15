@@ -1,6 +1,4 @@
-main {
-    background-color: $grey-light;
-}
+
 .block-menu-img {
     display: flex;
     &__img {
@@ -12,9 +10,20 @@ main {
     border-radius: 25px 25px 0px 0px;
     position: relative;
     top: -25px;
-    margin: 0px auto -25px;
+    margin-bottom: -25px;
+    background-color: $grey-light;
+    h2 {
+        margin: 0px auto 20px;
+        width: 90%;
+    }
+}
+.article-block {
     width: 90%;
-
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 .list-card {
     display: flex;
