@@ -1,0 +1,48 @@
+.display-body {
+    position: relative;
+    animation: display-body 3s forwards;
+}
+.block-loader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+.loader {
+    font-size: 10rem;
+    background:-webkit-linear-gradient($pink, $purple);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    transition: transform 3s ease-in-out ;
+    animation: loader 3s forwards;
+    z-index: 1;
+}
+@keyframes loader {
+    0% {
+    }
+    99% {
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(1080deg);
+    }
+}
+@keyframes display-body {
+    0% {
+        opacity: .2;
+        z-index: -1;
+    }
+    99% {
+        opacity: .2;
+        z-index: -1;
+    }
+    100%{
+        opacity: 1;
+        z-index: 1;
+    }
+}

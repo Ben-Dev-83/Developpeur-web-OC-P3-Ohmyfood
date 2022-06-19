@@ -1,25 +1,24 @@
-.card {
-    &__block-heart{
+.block-heart{
         display: flex;
-        position: absolute;
-        bottom: 22px;
-        right: 15px;
-        &:focus .card__heart-full {
-            transform:scale(1);
+        align-items: center;
+        &--hover{
+            &:hover .block-heart__heart-full {
+                transform:scale(1);
+            }
+        }
+        &__heart-full {
+            background:-webkit-linear-gradient($pink, $purple);
+            background-clip:text;
+            -webkit-background-clip:text;
+            color:transparent;
+            transform:scale(0);
+            transition: transform 1s ;
+            z-index: 1;
+            display: block;
+        }
+        &__heart-empty {
+            position: absolute;
+            display: block;
         }
     }
-    &__heart-full {
-        background:-webkit-linear-gradient($pink, $purple);
-        background-clip:text;
-        -webkit-background-clip:text;
-        color:transparent;
-        transform:scale(0);
-        transition: transform 1s ;
-        z-index: 1;
-        display: block;
-    }
-    &__heart-empty {
-        position: absolute;
-        display: block;
-    }
-}
+    

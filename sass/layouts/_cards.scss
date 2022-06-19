@@ -17,6 +17,7 @@
     position: relative;
     border-radius: 20px;
     background-color: white;
+    transition: all .3s ease-in;
     @include border-shadow($shadow);
     &__link {
         @include flex-colomn;

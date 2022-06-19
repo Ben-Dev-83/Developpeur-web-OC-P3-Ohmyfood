@@ -20,6 +20,7 @@
         align-items: center;
         text-align: center;
         position: relative;
+        transition: all .3s ease-in;
         &--hover:hover {
             background-color: #f5edff;
             @include hover;
