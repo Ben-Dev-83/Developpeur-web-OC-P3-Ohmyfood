@@ -1,6 +1,5 @@
 .search {
-    display: flex;
-    flex-direction: column;
+    @include flex-colomn;
     justify-content: center;
     align-items: center;
 }
@@ -31,9 +30,8 @@
 .search-descr {
     width: 100%;
     background-color: $grey-light;
-    display: flex;
+    @include flex-colomn;
     align-items: center;
-    flex-direction: column;
     text-align: center;
     padding: 30px;
     &__para {

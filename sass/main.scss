@@ -1,7 +1,8 @@
-@import "./utils/mixin";
-@import "./base/typography";
 @import "./base/base";
-@import "./base/color";
+@import "./base/typography";
+@import "./utils/variable";
+@import "./utils/map";
+@import "./utils/mixin";
 @import "./layouts/header";
 @import "./layouts/nav";
 @import "./layouts/search";

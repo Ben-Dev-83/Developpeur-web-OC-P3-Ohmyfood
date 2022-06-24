@@ -3,7 +3,7 @@
     color: white;
     border-radius: 25px;
     background: linear-gradient($pink, $purple);
-    width: fit-content;
+    @include width-fit;
     box-shadow: 0px 3px 3px $shadow;
     transition: all .3s ease-in;
     &--hover {

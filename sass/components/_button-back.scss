@@ -3,7 +3,7 @@
 }
 .header__button-back--display {
     display: flex;
-    height: 60px;
+    height: map-get($height, button-back );
     align-items: center;
     position: absolute;
     left: 5%;
