@@ -2,11 +2,11 @@
     width: 90%;
     max-width: 1500px;
 }
-@mixin width-fit {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-}
+// @mixin width-fit {
+//     width: -webkit-fit-content;
+//     width: -moz-fit-content;
+//     width: fit-content;
+// }
 
 @mixin border-shadow($colors) {
     box-shadow: 0px 3px 3px $colors ;

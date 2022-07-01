@@ -1,6 +1,7 @@
 .block-heart{
         display: flex;
         align-items: center;
+        width: 24px;
         &--hover{
             &:hover .block-heart__heart-full {
                 transform:scale(1);

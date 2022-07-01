@@ -2,31 +2,31 @@
     display: flex;
     &__img {
         width: 100%;
-        height: 600px;
+        height: map-get($height, menu-img);
         -o-object-fit: cover;
            object-fit: cover;
            @include mobile-only {
-            height: 250px;
+                height: map-get($height, menu-img-mobile);
            }
     }
 }
-.menu {
+.section-menu {
     padding-top: 20px;
     border-radius: 25px 25px 0px 0px;
     position: relative;
     top: -25px;
     margin-bottom: -25px;
     background-color: $grey-light;
-    .block-title {
-        margin: 0px auto 20px;
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+}
+.block-title {
+    margin: 0px auto 20px;
+    @include width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .article-block {
-    width: 80%;
+    @include width;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -35,76 +35,81 @@
     padding-bottom: 20px;
     @include mobile-only {
         flex-direction: column;
-        width: 90%;
         flex-wrap: nowrap;
     }
     .entree, .plats, .desserts {
         flex: 1 40%;
     }
 }
-.list-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.card__link {
-    border-radius: 15px;
-}
 .card-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    overflow: hidden;
-    position: relative;
-    border-radius: 15px;
-    height: 50px;
-    padding: 8px;
-    @include border-shadow($shadow);
-    h4 {
-        margin: 0;
-    }
-    &__descr {
-        overflow: hidden;
-        white-space: nowrap;
-        h4, p {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
+    opacity: 0;
+    margin-top:10px;
+}
+.entree { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s .2s forwards;
+                    animation: slide 1s .2s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s .4s forwards;
+                    animation: slide 1s .4s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s .6s forwards;
+                    animation: slide 1s .6s forwards;
         }
     }
-    .display {
-        position: absolute;
-        right: -40px;
-        margin-left: 10px;
-        transition: right 1s;
-        height: inherit;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        background-color: $green;
-        i {
-            transition: transform 1s;
+}
+.plats { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s .8s forwards;
+                    animation: slide 1s .8s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s 1s forwards;
+                    animation: slide 1s 1s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s 1.2s forwards;
+                    animation: slide 1s 1.2s forwards;
         }
     }
-    span {
-        // position: absolute;
-        // margin-right:20px;
-        transition: margin-right 1s;
+}
+.desserts { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s 1.4s forwards;
+                    animation: slide 1s 1.4s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s 1.6s forwards;
+                    animation: slide 1s 1.6s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s 1.8s forwards;
+                    animation: slide 1s 1.8s forwards;
+        }
     }
 }
-.menu__link:hover .display  {
-    right: 0;
-    i{
-        transform: rotate(360deg);
+@-webkit-keyframes slide{
+    from{
+    opacity:0;
+    margin-top: 10px;
     }
-}
-.menu__link:hover span  {
-    margin-right: 40px;
-}
-.ordered {
-    display: flex;
-    justify-content: center;
-    flex: 1 100%;
-}
+    to{
+      opacity:1;
+      margin-top: 0px;
+    }
+  }
+@keyframes slide{
+    from{
+    opacity:0;
+    margin-top: 10px;
+    }
+    to{
+      opacity:1;
+      margin-top: 0px;
+    }
+  }

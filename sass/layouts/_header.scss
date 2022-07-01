@@ -2,15 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: map-get($height, header);
     &__logo {
         display: flex;
-        width: -webkit-min-content;
-        width: -moz-min-content;
-        width: min-content;
-        height: -webkit-min-content;
-        height: -moz-min-content;
-        height: min-content;
     }
     &__img {
         width: 150px;

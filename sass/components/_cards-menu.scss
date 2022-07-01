@@ -1,0 +1,59 @@
+.list-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-menu {
+    border-radius: 15px;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        height: 50px;
+        padding: 8px;
+        @include border-shadow($shadow);
+    }
+    &__descr {
+        overflow: hidden;
+        white-space: nowrap;
+        h4 {
+            margin: 0;
+        }
+        h4, p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &__price {
+        transition: margin-right 1s;
+    }
+    &__icone {
+        position: absolute;
+        right: -40px;
+        margin-left: 10px;
+        transition: right 1s;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        background-color: $green;
+        i {
+            transition: transform 1s;
+        }
+    }
+}
+.card-menu:hover .card-menu__icone {
+    right: 0;
+    i{
+        transform: rotate(360deg);
+    }
+}
+.card-menu:hover .card-menu__price {
+    margin-right: 40px;
+}

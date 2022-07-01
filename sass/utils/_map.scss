@@ -1,10 +1,13 @@
 $breakpoints: (
-mobile: 991px
+    mobile: 991px
 );
 
 $height: (
     loader: 100vh,
     nav-num: 25px,
-    button-back: 60px,
-    card-img: 250px
+    button-back: inherit,
+    card-img: 250px,
+    header: 60px, 
+    menu-img: 600px,
+    menu-img-mobile: 250px
 );
