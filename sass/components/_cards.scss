@@ -38,6 +38,9 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 32px 10px 10px;
+        @include mobile-only {
+            padding: 4% 8% 4% 4%;
+        }
     }
     &__img {
         width: 100%;
