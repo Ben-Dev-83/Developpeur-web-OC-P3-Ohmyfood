@@ -2,7 +2,7 @@
     display: none;
     &--display {
         display: flex;
-        height: map-get($height, button-back );
+        height: map-get($height, button-back);
         align-items: center;
         position: absolute;
         left: 5%;

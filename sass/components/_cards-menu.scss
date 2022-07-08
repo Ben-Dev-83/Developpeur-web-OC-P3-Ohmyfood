@@ -1,8 +1,3 @@
-.list-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 .card-menu {
     border-radius: 15px;
     &__block {
@@ -13,8 +8,8 @@
         overflow: hidden;
         position: relative;
         border-radius: 15px;
-        height: 50px;
-        padding: 8px;
+        height: map-get($height, card-menu);
+        padding: 8px 0px 8px 8px;
         @include border-shadow($shadow);
     }
     &__descr {
@@ -31,29 +26,34 @@
     }
     &__price {
         transition: margin-right 1s;
+        height: inherit;
+        padding: 7.5px 0px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 60px;
     }
     &__icone {
         position: absolute;
-        right: -40px;
-        margin-left: 10px;
+        right: -56px;
         transition: right 1s;
         height: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
+        width: 56px;
         background-color: $green;
         i {
             transition: transform 1s;
         }
     }
-}
-.card-menu:hover .card-menu__icone {
-    right: 0;
-    i{
-        transform: rotate(360deg);
+    &:hover .card-menu__icone {
+        right: 0;
+        i{
+            transform: rotate(360deg);
+        }
     }
-}
-.card-menu:hover .card-menu__price {
-    margin-right: 40px;
+    &:hover .card-menu__price {
+        margin-right: 56px;
+    }
 }

@@ -7,7 +7,13 @@ $height: (
     nav-num: 25px,
     button-back: inherit,
     card-img: 250px,
+    card-menu: 56px,
     header: 60px, 
-    menu-img: 600px,
-    menu-img-mobile: 250px
+    menu-img: 600px
 );
+
+
+$height-mobile: (
+    card-img: 28vh,
+    menu-img: 40vh
+)

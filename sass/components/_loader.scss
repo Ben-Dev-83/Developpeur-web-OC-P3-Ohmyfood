@@ -7,7 +7,7 @@
     width: 100%;
     &__loader {
         font-size: 10rem;
-        background:-webkit-linear-gradient($pink, $purple);
+        @include background-gradient;
         background-clip:text;
         -webkit-background-clip:text;
         color:transparent;

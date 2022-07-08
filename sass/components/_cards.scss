@@ -45,5 +45,8 @@
         object-fit: cover;
         -o-object-fit: cover;
         border-radius: 20px 20px 0px 0px;
+        @include mobile-only{
+            height: map-get($height-mobile, card-img);
+        }
     }
 }
