@@ -361,6 +361,11 @@ li {
   align-items: center;
   padding: 10px 32px 10px 10px;
 }
+@media screen and (max-width: 991px) {
+  .card__descr {
+    padding: 10px 20px 10px 10px;
+  }
+}
 .card__img {
   width: 100%;
   height: 250px;
