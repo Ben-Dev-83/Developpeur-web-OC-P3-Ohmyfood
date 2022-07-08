@@ -39,7 +39,7 @@
         align-items: center;
         padding: 10px 32px 10px 10px;
         @include mobile-only {
-            padding: 4% 8% 4% 4%;
+            padding: 10px 20px 10px 10px;
         }
     }
     &__img {
