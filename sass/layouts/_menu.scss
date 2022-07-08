@@ -1,0 +1,175 @@
+.block-menu-img {
+    display: flex;
+    &__img {
+        width: 100%;
+        height: map-get($height, menu-img);
+        -o-object-fit: cover;
+           object-fit: cover;
+           @include mobile-only {
+                height: map-get($height-mobile, menu-img);
+           }
+    }
+}
+.section-menu {
+    padding-top: 20px;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    top: -25px;
+    margin-bottom: -25px;
+    background-color: $grey-light;
+}
+.block-title {
+    margin: 0px auto 20px;
+    @include width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.article-block {
+    @include width;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include mobile-only {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .entree, .entree-note, .plats, .plats-note, .desserts, .desserts-note {
+        flex: 1 40%;
+        h3 {
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        .list-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+.card-menu {
+    opacity: 0;
+    margin-top:10px;
+}
+.entree { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s .2s forwards;
+                    animation: slide 1s .2s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s .4s forwards;
+                    animation: slide 1s .4s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s .6s forwards;
+                    animation: slide 1s .6s forwards;
+        }
+    }
+}
+.plats { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s .8s forwards;
+                    animation: slide 1s .8s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s 1s forwards;
+                    animation: slide 1s 1s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s 1.2s forwards;
+                    animation: slide 1s 1.2s forwards;
+        }
+    }
+}
+.desserts { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s 1.4s forwards;
+                    animation: slide 1s 1.4s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s 1.6s forwards;
+                    animation: slide 1s 1.6s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s 1.8s forwards;
+                    animation: slide 1s 1.8s forwards;
+        }
+    }
+}
+.entree-note { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s .2s forwards;
+                    animation: slide 1s .2s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s .4s forwards;
+                    animation: slide 1s .4s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s .6s forwards;
+                    animation: slide 1s .6s forwards;
+        }
+        &:nth-child(4) {
+            -webkit-animation: slide 1s .8s forwards;
+                    animation: slide 1s .8s forwards;
+        } 
+    }
+}
+.plats-note { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s 1s forwards;
+                    animation: slide 1s 1s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s 1.2s forwards;
+                    animation: slide 1s 1.2s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s 1.4s forwards;
+                    animation: slide 1s 1.4s forwards;
+        }
+    }
+}
+.desserts-note { 
+    .card-menu {
+        &:nth-child(1) {
+            -webkit-animation: slide 1s 1.6s forwards;
+                    animation: slide 1s 1.6s forwards;
+        }
+        &:nth-child(2) {
+            -webkit-animation: slide 1s 1.8s forwards;
+                    animation: slide 1s 1.8s forwards;
+        }
+        &:nth-child(3) {
+            -webkit-animation: slide 1s 2s forwards;
+                    animation: slide 1s 2s forwards;
+        }
+    }
+}
+@-webkit-keyframes slide{
+    from{
+    opacity:0;
+    margin-top: 10px;
+    }
+    to{
+      opacity:1;
+      margin-top: 0px;
+    }
+  }
+@keyframes slide{
+    from{
+    opacity:0;
+    margin-top: 10px;
+    }
+    to{
+      opacity:1;
+      margin-top: 0px;
+    }
+  }

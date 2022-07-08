@@ -1,0 +1,59 @@
+.card-menu {
+    border-radius: 15px;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        height: map-get($height, card-menu);
+        padding: 8px 0px 8px 8px;
+        @include border-shadow($shadow);
+    }
+    &__descr {
+        overflow: hidden;
+        white-space: nowrap;
+        h4 {
+            margin: 0;
+        }
+        h4, p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &__price {
+        transition: margin-right 1s;
+        height: inherit;
+        padding: 7.5px 0px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 60px;
+    }
+    &__icone {
+        position: absolute;
+        right: -56px;
+        transition: right 1s;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        background-color: $green;
+        i {
+            transition: transform 1s;
+        }
+    }
+    &:hover .card-menu__icone {
+        right: 0;
+        i{
+            transform: rotate(360deg);
+        }
+    }
+    &:hover .card-menu__price {
+        margin-right: 56px;
+    }
+}
