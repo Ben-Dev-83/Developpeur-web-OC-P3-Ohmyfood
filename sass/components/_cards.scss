@@ -9,26 +9,24 @@
 }
 .article-cards {
     @include width;
+    @include flex-colomn;
     margin: auto;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    @include mobile-only{
-        @include flex-colomn;
+    @include desktop {
+        @include flex-row;
     }
 }
 .card {
     position: relative;
-    width: inherit;
-    flex: 1 40%;
+    width: 100%;
     border-radius: 20px;
     background-color: white;
     transition: all .3s ease-in;
     @include border-shadow($shadow);
-    @include mobile-only{
-        width: 100%;
-        flex: auto
+    @include desktop {
+        flex: 1 40%;
     }
     &__link {
         @include flex-colomn;
@@ -37,19 +35,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 32px 10px 10px;
-        @include mobile-only {
-            padding: 10px 20px 10px 10px;
+        padding: 10px 20px 10px 10px;
+        @include desktop {
+            padding: 10px 32px 10px 10px;
         }
     }
     &__img {
         width: 100%;
-        height: map-get($height, card-img);
         object-fit: cover;
+        height: map-get($height, card-img);
         -o-object-fit: cover;
         border-radius: 20px 20px 0px 0px;
-        @include mobile-only{
-            height: map-get($height-mobile, card-img);
+        @include desktop {
+            height: map-get($height-desktop, card-img);
         }
     }
 }

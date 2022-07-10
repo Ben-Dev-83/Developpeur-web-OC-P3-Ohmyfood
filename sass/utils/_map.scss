@@ -1,19 +1,19 @@
 $breakpoints: (
-    mobile: 991px
+    desktop: 992px
 );
 
 $height: (
     loader: 100vh,
     nav-num: 25px,
     button-back: inherit,
-    card-img: 250px,
-    card-menu: 56px,
-    header: 60px, 
-    menu-img: 600px
-);
-
-
-$height-mobile: (
     card-img: 28vh,
-    menu-img: 40vh
-)
+    menu-img: 40vh,
+    header: 60px,
+    card-menu: 56px
+    );
+    
+    
+    $height-desktop: (
+        menu-img: 600px,
+        card-img: 250px
+);

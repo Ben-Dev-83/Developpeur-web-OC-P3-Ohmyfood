@@ -6,14 +6,12 @@
     width: 100%;
 }
 .footer__block {
-    max-width: 1500px;
+    @include width;
     @include flex-colomn;
     margin: auto;
     padding: 20px 0px;
-    align-items: center;
-    @include mobile-only {
-        @include width;
-        align-items: initial;
+    @include desktop {
+        align-items: center;
     }
 }
 .footer__icone {

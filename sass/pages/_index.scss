@@ -46,31 +46,22 @@
 .section-nav {
     @include width;
     @include flex-colomn;
-    align-items: center;
     justify-content: center;
     margin: 40px auto;
-    @include mobile-only {
-        align-items: inherit;
-        
+    @include desktop {
+        align-items: center;
     }
     h2 {
         margin-bottom: 20px;
     }
-    nav {
-        width: inherit;
-        @include mobile-only {
-            width: auto;
-        }
-    }
     ul {
-        display: flex;
-        flex-direction: row;
+        @include flex-colomn;
+        margin-left: 12.5px;
+        gap: 15px;
         justify-content: center;
-        gap: 26px;
-        @include mobile-only {
-            @include flex-colomn;
-            gap: 15px;
-            margin-left: 12.5px;
+        @include desktop {
+            @include flex-row;
+            gap: 26px;
         }
     }
     &__link {

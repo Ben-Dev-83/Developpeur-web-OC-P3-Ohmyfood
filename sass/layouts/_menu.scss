@@ -5,8 +5,8 @@
         height: map-get($height, menu-img);
         -o-object-fit: cover;
            object-fit: cover;
-           @include mobile-only {
-                height: map-get($height-mobile, menu-img);
+           @include desktop {
+                height: map-get($height-desktop, menu-img);
            }
     }
 }
@@ -27,18 +27,18 @@
 }
 .article-block {
     @include width;
+    @include flex-colomn;
+    flex-wrap: nowrap;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 30px;
-    @include mobile-only {
-        flex-direction: column;
-        flex-wrap: nowrap;
+    @include desktop {
+        @include flex-row;
+        flex-wrap: wrap;
     }
     .entree, .entree-note, .plats, .plats-note, .desserts, .desserts-note {
         flex: 1 40%;
-        h3 {
+        h2 {
+            font-size: 18px;
             font-weight: normal;
             text-transform: uppercase;
         }

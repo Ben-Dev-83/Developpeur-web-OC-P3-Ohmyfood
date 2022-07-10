@@ -15,10 +15,10 @@
     &__descr {
         overflow: hidden;
         white-space: nowrap;
-        h4 {
+        h3 {
             margin: 0;
         }
-        h4, p {
+        h3, p {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -50,11 +50,28 @@
     }
     &:hover .card-menu__icone {
         right: 0;
-        i{
-            transform: rotate(360deg);
+        i {
+            -webkit-animation: check 1s both;
+                    animation: check 1s both;
         }
     }
     &:hover .card-menu__price {
         margin-right: 56px;
+    }
+}
+@-webkit-keyframes check {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes check {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
