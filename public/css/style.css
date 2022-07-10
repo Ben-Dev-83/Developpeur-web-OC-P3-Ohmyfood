@@ -19,18 +19,6 @@ main {
   margin: auto;
 }
 
-* {
-  font-family: Roboto, Arial, "Time New Roman", sans-serif;
-}
-
-.title, .footer h4, .header__img {
-  font-family: "Shrikhand", "Roboto", Arial, "Time New Roman", sans-serif;
-}
-
-h3 {
-  font-size: 18px;
-}
-
 h4 {
   margin: 10px 0px;
 }
@@ -42,6 +30,18 @@ a {
 
 li {
   list-style-type: none;
+}
+
+* {
+  font-family: Roboto, Arial, "Time New Roman", sans-serif;
+}
+
+.title, .footer h4, .header__img {
+  font-family: "Shrikhand", "Roboto", Arial, "Time New Roman", sans-serif;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 .header {
