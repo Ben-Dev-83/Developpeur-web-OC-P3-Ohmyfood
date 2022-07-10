@@ -2,11 +2,19 @@
     background-color: $grey-dark;
     color: white;
 }
+.footer {
+    width: 100%;
+}
 .footer__block {
-    @include width;
+    max-width: 1500px;
     @include flex-colomn;
     margin: auto;
     padding: 20px 0px;
+    align-items: center;
+    @include mobile-only {
+        @include width;
+        align-items: initial;
+    }
 }
 .footer__icone {
     margin-right: 10px;

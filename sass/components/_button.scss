@@ -4,7 +4,7 @@
     @include background-gradient;
     @include border-shadow($shadow);
     transition: all .3s ease-in;
-    &:hover {
+    &--hover:hover {
         @include hover;
     }
 }

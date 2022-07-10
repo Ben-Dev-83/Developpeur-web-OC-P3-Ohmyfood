@@ -45,6 +45,7 @@
         background-color: $green;
         i {
             transition: transform 1s;
+            color: white;
         }
     }
     &:hover .card-menu__icone {
